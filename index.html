@@ -1,649 +1,735 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Sunshine - Responsive vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Sunshine - Responsive vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Sunshine, portfolio" />
+    <meta name="author" content="lmtheme" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/transition-animations.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
-<meta name="description" content="Personal Webpage">
-<meta name="author" content="YUHAN SONG">
+    
+  </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <body>
+   
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
 
-<title>SONG</title>
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header">
+        <div class="my-photo">
+          <img src="images/me.png" alt="image">
+          <div class="mask"></div>
+        </div>
 
-<!-- STYLES -->
-<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,700,700i,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <div class="site-title-block">
+          <h1 class="site-title">YUHAN SONG</h1>
+          <p class="site-description">AI Researcher</p>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </header>
+      <!-- /Header -->
+
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Navigation & Social buttons -->
+          <div class="site-nav mobile-menu-hide">
+            <!-- Main menu -->
+            <ul id="nav" class="site-main-menu">
+              <!-- About Me Subpage link -->
+              <li>
+                <a class="pt-trigger" href="#about_me" data-animation="58" data-goto="1">About me</a><!-- href value = data-id without # of .pt-page -->
+              </li>
+              <!-- /About Me Subpage link -->
+              <li>
+                <a class="pt-trigger" href="#resume" data-animation="59" data-goto="2">Resume</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio" data-animation="60" data-goto="3">Portfolio</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#blog" data-animation="61" data-goto="4">Blog</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#contact" data-animation="58" data-goto="5">Contact</a>
+              </li>
+            </ul>
+            <!-- /Main menu -->
+
+            <!-- Social buttons -->
+            <ul class="social-links">
+              <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+              <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="tip social-button" href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+              <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
+              <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+              <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
+            </ul>
+            <!-- /Social buttons -->
+          </div>
+          <!-- Navigation & Social buttons -->
+
+          <!-- Subpages -->
+          <div class="subpages">
+            <!-- About Me Subpage -->
+            <section class="pt-page pt-page-1" data-id="about_me">
+              <div class="section-title-block">
+                <h2 class="section-title">About Me</h2>
+                <h5 class="section-description">Student, AI Researcher, Photographer</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12 mobile-visible subpage-block">
+                  <div class="my-photo-small">
+                    <img src="images/photo_small.jpg" alt="image">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 subpage-block">
+                  <div class="general-info">
+                    <h3>I am an AI researcher in JAIST</h3>
+                    <p style="font-size:large">Greetings! My name is <span>Yuhan SONG</span>. I was born in Anhui, China.<br><br>I received B.S. degree in Information Security and M.S. degree in Information Science in 2019 and 2023, respectively, from <a href="https://en.hfut.edu.cn/" style="text-decoration: none"><span>Hefei University of Technology</span></a> and <a href="https://www.jaist.ac.jp/english/" style="text-decoration: none"><span>Japan Advanced Institute of Science and Technology</span></a>(under the supervision of <a href="http://www.jaist.ac.jp/robot/" style="text-decoration: none"><span>Professor.Nak Young Chong</span></a>).<br><br>
+                      My main research territory is the utilization of deep learning in AI robotics and medical image analysis. Additionally, I like photography, using my camera to record and share what I see with people around the world.</p>
+                  </div>
+                </div>
+
+                <!--<div class="col-sm-4 col-md-4 subpage-block">
+                  <div class="block end">
+                    <ul class="info-list">
+                      <li><span class="title">Name</span><span class="value">Alex Smith</span></li>
+                      <li><span class="title">Age</span><span class="value">29</span></li>
+                      <li><span class="title">Address</span><span class="value">88 Street - State, Town</span></li>
+                      <li><span class="title">e-mail</span><span class="value"><a href="mailto:email@addres.com">email@addres.com</a></span></li>
+                      <li><span class="title">Phone</span><span class="value">+0123 123 456 789</span></li>
+                      <li><span class="title">Freelance</span><span class="value available">Available</span></li>
+                    </ul>
+                  </div>
+                </div>-->
+
+               
+
+              <!-- Services block -->
+              <div class="block-title">
+                <h3>Research Interests</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/ultrasound.png" alt="Responsive Design">
+                      <h4>Medical Image Analysis</h4>
+                      <p>Abdominal ultrasound image segmentation</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/robotic-arm.png" alt="Copywriter">
+                      <h4>AI Robotics</h4>
+                      <p>Robot-assisted ultrasound scan system</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/team.png" alt="E-Commerce">
+                      <h4>Players Matching</h4>
+                      <p>A high-efficient and player experience oriented rating system.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/personal.png" alt="Management">
+                      <h4>Information Security</h4>
+                      <p>Social network privacy disclosure detection</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+              <div class="block-title">
+                <h3>Hobbies</h3>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/video-player.png" alt="Responsive Design">
+                      <h4>Movies</h4>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <img src="images/service/photography.png" alt="Copywriter">
+                      <h4>Photography</h4>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          
+  
+      
+
+              
+            <!-- End of About Me Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page pt-page-2" data-id="resume">
+              <div class="section-title-block">
+                <h2 class="section-title">Resume</h2>
+                <h5 class="section-description">Edcucation and Research Experience</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2020~2023</h5>
+                      <h4 class="event-name">Master's Course</h4>
+                      <a href="https://www.jaist.ac.jp/english/" style="text-decoration: none"><span>Japan Advanced Institute of Science and Technology</span></a>
+                      <p> I pursued a Master's degree at JAIST in <a href="https://www.jaist.ac.jp/robot/" style="text-decoration: none"><span>Intelligent Robotics Lab</span></a>, under the esteemed guidance of <a href="https://fp.jaist.ac.jp/public/Default2.aspx?id=352&l=1" style="text-decoration: none"><span>Professor Nakyoung Chong</span></a>. Throughout this period, my research interests expanded to encompass diverse areas such as medical image analysis, AI robotics, and game matching strategies. 
+                        The focal point of my Master's thesis was the intricate task of ultrasound image segmentation, an area where I applied my skills and knowledge to contribute to the field. Please check the research introduction page of our <a href="http://www.jaist.ac.jp/robot/research/ultrasound/ultrasound.php" style="text-decoration: none"><span>Robot-assisted Ultasound Sacn System</span></a> for details.</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2015~2019</h5>
+                      <h4 class="event-name">Undergraduate</h4>
+                      <a href="https://en.hfut.edu.cn/" style="text-decoration: none"><span>Hefei University of Technology</span></a>
+                      <p>During my undergraduate years, I devoted my focus to exploring the applications of deep learning in the field of information security. Notably, I was honored to receive the university scholarship in both 2017 and 2018, acknowledging my academic achievements during that time. Moreover, I had the privilege of participating in the College Students' Innovation and Entrepreneurship Competition in 2018, where my project received a prestigious provincial prize. Additionally, I achieved a commendable 3rd prize in the National College Student Information Security Contest for another project I worked on.</p>
+                    </div>                                       
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Research Experience</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">Apr 2022 - Mar 2023</h5>
+                      <h4 class="event-name">Ultrasound Image Segmentation</h4>
+                      <span class="event-description">JAIST</span>
+                      <p>I have proposed and implemented an original network model that can perform image segmentation targeting at multiple anatomical structures in abdominal ultasound images.</p>
+                    </div>
+                     <!-- Single event -->
+                     <div class="timeline-event te-primary">
+                      <h5 class="event-date">Oct 2021 - Mar 2022</h5>
+                      <h4 class="event-name">Dense Visual Descriptor</h4>
+                      <span class="event-description">JAIST</span>
+                      <p>Exploring the utilization of dense visual descriptors in the manipulation of robot arms.</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">Oct 2018 - Apr 2019</h5>
+                      <h4 class="event-name">Image Style Transfer</h4>
+                      <span class="event-description">HFUT</span>
+                      <p>Converting an image's visual style while maintaining it's semantic contents.</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">July 2017 - Sep 2018</h5>
+                      <h4 class="event-name">Multimodel Privacy Disclosure Detection in SNS</h4>
+                      <span class="event-description">HFUT</span>
+                      <p>We were using a multimodel network structure combining images and texts to detect and alert the potentional risks of privacy disclosure in social networks. This project has won a prestigious provincial prize in the College Students' Innovation and Entrepreneurship Competition and a third prize in the National College Student Information Security Contest, both in the year of 2018.</p>
+                    </div>                                     
+                  </div>
+                </div>
+
+                <!--Publications-->
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Publications</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">July 2023</h5>
+                      <a href="https://www.ifac2023.org/" style="text-decoration: none"><h4 class="event-name">IFAC World Congress 2023</h4></a>
+                      <span>Conference Proceeding</span>
+                      <a href="https://www.ifac2023.org/" style="text-decoration: none"><p>Abdominal Multi-Organ Segmentation Based on Feature Pyramid Network and Spatial Recurrent Neural Network</p></a>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">Aug 2023</h5>
+                      <a href="https://www.ifac2023.org/" style="text-decoration: none"><h4 class="event-name">IEEE ICMA 2023</h4></a>
+                      <span>Conference Proceeding</span>
+                      <a href="https://www.ifac2023.org/" style="text-decoration: none"><p>Two-Path Augmented Directional Context Aware Ultrasound Image Segmentation</p></a>
+                    </div>                                       
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Language Proficiency</h3>
+                  </div>
+                  <div class="skills-info">
+                    <h4 class="event-name">Chinese</h4>                               
+                    <span>Native Speaker<br><br></span>
+                    
+
+                    <h4 class="event-name">English</h4>                               
+                    <span>TOEFL: 104<br><br></span>
+
+                    <h4 class="event-name">Japanese</h4>                               
+                    <span>JLPT: N1</span>
+                  </div>
+
+                  <div class="block-title">
+                    <h3>Coding Skills</h3>
+                  </div>
+                  <div class="skills-info">
+                   
+                    <span>Python<br></span>
+                    
+
+                    <span>MATLAB<br></span>
+                    
+
+                    <span>Java<br></span>
+                    
+
+                    <span>PHP<br></span>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <div class="download-cv-block">
+                    <a class="button" target="_blank" href="#">Download CV</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Resume Subpage -->
 
 
-<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/colors.css" />
-<link rel="stylesheet" type="text/css" href="css/darkMode.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-<!-- /STYLES -->
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-3" data-id="portfolio">
+              <div class="section-title-block">
+                <h2 class="section-title">Portfolio</h2>
+                <h5 class="section-description">My Best Works</h5>
+              </div>
 
-</head>
+              <!-- Portfolio Content -->
+              <div class="portfolio-content">
+                            
+                <!-- Portfolio filter -->
+                <ul id="portfolio_filters" class="portfolio-filters">
+                  <li class="active">
+                    <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="travel">Travel</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="everyday">Everyday</a>
+                  </li>
+                  <li>
+                    <a class="filter btn btn-sm btn-link" data-group="event">Event</a>
+                  </li>
+                </ul>
+                <!-- End of Portfolio filter -->
 
-<script type="text/javascript"> 
- 
-	function run(){
-		document.getElementById("show_landscape").click();
-	}
-	</script> 
+                <!-- Portfolio Grid -->
+                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
 
-<body onload="run()"> <!-- If you want DARK MODE just add class 'dark' to body. For Example: <body class="dark"> -->
-	
-	<!-- PRELOADER -->
-	<div class="arlo_tm_preloader">
-		<div class="spinner_wrap">
-			<div class="spinner"></div>
-		</div>
-	</div>
-	<!-- /PRELOADER -->
+                  <!-- Portfolio Item 1 -->
+                  <figure class="item" data-groups='["all", "travel"]'>
+                    <a class="ajax-page-load" href="./portfolios/kamikouchi/portfolio.html">
+                      <img src="./portfolios/kamikouchi/0.png" alt="">
+                      <div>
+                        <h5 class="name">Kamikochi</h5>
+                        <small>Travel</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 1 -->
 
-	
-<!-- WRAPPER ALL -->
-<div class="arlo_tm_all_wrap" data-magic-cursor="" data-color="crimson">
-	
-	<!-- "" is default option -->
-	
-	<!-- MAGIC CURSOR VALUES: "", hide -->
-	<!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
-	
-	<!-- MODALBOX NEWS -->
-	<div class="arlo_tm_modalbox_news">
-		<div class="box_inner">
-			<div class="close">
-				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
-			</div>
-			<div class="description_wrap scrollable">
-			</div>
-		</div>
-	</div>
-	<!-- /MODALBOX NEWS -->
-	
-	<!-- MOBILE MENU -->
-	<div class="arlo_tm_mobile_menu">
-		<div class="mobile_menu_inner">
-			<div class="container">
-				<div class="mobile_in">
-					<div class="logo">
-						<a href="#"><img src="img/logo/mobile/dark.png" alt="" /></a>
-					</div>
-					<div class="my_trigger">
-						<div class="hamburger hamburger--collapse-r">
-							<div class="hamburger-box">
-								<div class="hamburger-inner"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="dropdown">
-			<div class="container">
-				<div class="dropdown_inner">
-					<ul class="anchor_nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Research</a></li>
-						<li><a href="#portfolio">Photographs</a></li>
-						<li><a href="#news">Blogs</a></li>
-						<!--<li><a href="#contact">Contact</a></li>-->
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /MOBILE MENU -->
-	
-	<!-- TOPBAR -->
-	<div class="arlo_tm_topbar">
-		<div class="container">
-			<div class="topbar_inner">
-				<div class="logo">
-					<a href="#"><img class="light" src="img/logo/classic/logo_s_light.png" alt="" /></a>
-					<a href="#"><img class="dark" src="img/logo/classic/logo_s_dark.png" alt="" /></a>
-				</div>
-				<div class="menu">
-					<ul class="anchor_nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Research</a></li>
-						<li><a href="#portfolio">Photographs</a></li>
-						<li><a href="#news">Blogs</a></li>
-						<!--<li><a href="#contact">Contact</a></li>-->
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /TOPBAR -->
-	
-	<!-- HERO -->
-	<div class="arlo_tm_hero" id="home">
-		<div class="background">
-			<div class="image" data-img-url="img/slider/1.jpg"></div>
-			<div class="particle_wrapper">
-				<div id="particles-js"></div>
-			</div>
-			<div class="overlay"></div>
-		</div>
-		<div class="content">
-			<div class="image_wrap">
-				<div class="main" data-img-url="img/about/Song.jpg"></div>
-			</div>
-			<div class="name_holder">
-				<h3>Yuhan <span>SONG</span></h3>
-			</div>
-			<div class="text_typing">
-				<p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
-			</div>
-		</div>
-		<div class="arlo_tm_arrow_wrap bounce anchor">
-			<a href="#about"><i class="xcon-angle-double-down"></i></a>
-		</div>
-	</div>
-	<!-- /HERO -->
-	
-	<!-- ABOUT -->
-	<div class="arlo_tm_about" id="about">
-		<div class="container">
-			<div class="arlo_tm_main_title">
-				<span>Biography</span>
-				<h3>About Me</h3>
-			</div>
-			<div class="about_inner">
-				<div class="left">
-					<div class="about_image_wrap parallax" data-relative-input="true">
-						<div class="image layer" data-depth="0.1">
-							<img src="img/ratios/550x650.jpg" alt="" />
-							<div class="inner" data-img-url="img/about/Song.jpg"></div>
-						</div>
-						<div class="border layer" data-depth="0.2">
-							<img src="img/ratios/550x650.jpg" alt="" />
-							<div class="inner"></div>
-						</div>
-					</div>
-				</div>
-				<div class="right">
-					<div class="about_title">
-						<h3>I'm Yuhan SONG, a <span class="arlo_tm_animation_text_word"></span></h3>
-					</div>
-					<div class="text">
-						<p>Greetings! My name is <span>Yuhan SONG</span>. I was born in Anhui, China. And I received B.S. degree in Information Security and M.S. degree in Information Science in 2019 and 2023, respectively, from <a href="https://en.hfut.edu.cn/" style="text-decoration: none"><span>Hefei University of Technology</span></a> and <a href="https://www.jaist.ac.jp/english/" style="text-decoration: none"><span>Japan Advanced Institute of Science and Technology</span></a>(under the supervision of <a href="http://www.jaist.ac.jp/robot/" style="text-decoration: none"><span>Professor.Nak Young Chong</span></a>). My main research territory is the utilization of deep learning in AI robotics and medical image analysis. Additionally, I like photography, using my camera to record and share what I see with people around the world.</p>
-					</div>
-					<div class="about_short_contact_wrap">
-						<ul>
-							<li>
-								<img class="svg" src="img/svg/gift.svg" alt="" />
-								<span><label>Birthday:</label>June.23.1998</span>
-							</li>
-							<li>
-								<img class="svg" src="img/svg/calendar-4.svg" alt="" />
-								<span><label>Age:</label>24</span>
-							</li>
-							<li>
-								<img class="svg" src="img/svg/location-1.svg" alt="" />
-								<span><label>Location:</label><a class="href_location">Tokyo, Japan</a></span>
-							</li>
-							<li>
-								<img class="svg" src="img/svg/game-controller-2.svg" alt="" />
-								<span><label>Interests:</label>Movie, Photography</span>
-							</li>
-							<li>
-								<img class="svg" src="img/svg/study-5.svg" alt="" />
-								<span><label>Major:</label><a class="href_location" href="#"></a>Information Science</span>
-							</li>
-							<li>
-								<img class="svg" src="img/svg/degree-1.svg" alt="" />
-								<span><label>Degree:</label>M.S</span>
-							</li>	
-							<li>
-								<img class="svg" src="img/svg/message-3.svg" alt="" />
-								<span><label>Mail:</label><a href="mailto:example@gmail.com">songyuhan98&#64;gmail.com</a></span>
-							</li>
-						</ul>
-					</div>
-					<div class="arlo_tm_button">
-						<a href="/resume/YUHAN_SONG_CV.pdf" download><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /ABOUT -->
-	
-	<!-- SERVICES -->
-	<div class="arlo_tm_section" id="services">
-		<div class="arlo_tm_services">
-			<div class="container">
-				<div class="arlo_tm_main_title">
-					<span>Research Interests</span>
-					<h3>Deep Learning</h3>
-				</div>
-				<div class="service_inner">
-					<ul>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s">
-							<div class="inner">
-								<img class="svg" src="img/svg/creativity.svg" alt="" />
-								<h3>Medical Image Analysis</h3>
-								<p>I have proposed and implemented an original neural network model for abdominal ultrasound image segmentation. For details, please check the research intoduction from <a href="http://www.jaist.ac.jp/robot/research/ultrasound/ultrasound.php" style="text-decoration: none"><span>JAIST's Robotics Lab</span></a>.
-									Two conference papers revolving around this topic have been accepted respectively by IFAC 2023 and ICMA 2023.
-								</p>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
-							<div class="inner">
-								<img class="svg" src="img/svg/code.svg" alt="" />
-								<h3>Information Security</h3>
-								<p>Using AI to inspect the photos and texts pbulished by users on social networks, which may lead to severe leakage of personal information. This project has won the third prize from National College Student Information Security Contest 2018</p>
-							</div>
-						</li>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
-							<div class="inner">
-								<img class="svg" src="img/svg/telegram.svg" alt="" />
-								<h3>Game Matching</h3>
-								<p>With the progress of online MOBA games, the design of players' matching strategy has aroused attention...</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /SERVICES -->
-	
-	<!-- PORTFOLIO -->
-	<div class="arlo_tm_section" id="portfolio">
-		<div class="arlo_tm_portfolio">
-			<div class="container">
-				<div class="arlo_tm_main_title">
-					<span>Interests</span>
-					<h3>Photography</h3>
-				</div>
-				<div class="portfolio_inner">
-					<div class="arlo_tm_portfolio_titles"></div>
-					<div class="portfolio_filter">
-						<ul>
-							<li><a href="#" id="llink" data-filter=".landscape"><span id="show_landscape">Landscape</span></a></li>
-							<li><a href="#" data-filter=".plants">Plants</a></li>
-							<li><a href="#" data-filter=".animals">Animals</a></li>
-							<li><a href="#" data-filter=".human">Human</a></li>
-							<li><a href="#" data-filter=".architecture">Architecture</a></li>		
-						</ul>
-					</div>
-					<div class="portfolio_list">
-						<ul class="gallery_zoom">
-							<li class="plants">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="桜" data-category="Photography">
-										<a class="zoom" href="img/portfolio/1-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/1-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="plants">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="葉" data-category="Photography">
-										<a class="zoom" href="img/portfolio/2-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/2-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="architecture">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="金沢城" data-category="Photography">
-										<a class="zoom" href="img/portfolio/3-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/3-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="animals">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="柴犬" data-category="Photography">
-										<a class="zoom" href="img/portfolio/4-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/4-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="plants">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="葉" data-category="Photography">
-										<a class="zoom" href="img/portfolio/5-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/5-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="landscape">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="展望台" data-category="Photography">
-										<a class="zoom" href="img/portfolio/6-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/6-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="landscape">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="滝" data-category="Photography">
-										<a class="zoom" href="img/portfolio/7.gif">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/7.gif"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="landscape">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="木" data-category="Photography">
-										<a class="zoom" href="img/portfolio/8-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/8-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="plants">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="花" data-category="Photography">
-										<a class="zoom" href="img/portfolio/9-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/9-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="animals">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="蛙" data-category="Photography">
-										<a class="zoom" href="img/portfolio/10-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/10-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="landscape">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="黄昏" data-category="Photography">
-										<a class="zoom" href="img/portfolio/11-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/11-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="human">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="交差点" data-category="Photography">
-										<a class="zoom" href="img/portfolio/12-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/12-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="human">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="屏" data-category="Photography">
-										<a class="zoom" href="img/portfolio/13-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/13-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="architecture">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="亭" data-category="Photography">
-										<a class="zoom" href="img/portfolio/14-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/14-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-							<li class="plants">
-								<div class="inner">
-									<div class="entry arlo_tm_portfolio_animation_wrap" data-title="芽" data-category="Photography">
-										<a class="zoom" href="img/portfolio/15-min.jpg">
-											<img src="img/ratios/ratio-1-1.jpg" alt="" />
-											<div class="main_image" data-img-url="img/portfolio/15-min.jpg"></div>
-										</a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /PORTFOLIO -->
+                  <!-- Portfolio Item 2 -->
+                  <figure class="item" data-groups='["all", "everyday"]'>
+                    <a href="./portfolios/first day of 3 birds/first day of 3 birds.mp4" title="First day of 3 Birds" class="lightbox mfp-iframe">
+                      <img src="./portfolios/first day of 3 birds/0.png" alt="">
+                      <div>
+                        <h5 class="name">ココネ</h5>
+                        <small>Pet</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 2 -->
 
-	<!-- NEWS -->
-	 <div class="arlo_tm_section" id="news">
-		<div class="arlo_tm_news">
-			<div class="container">
-				<div class="arlo_tm_main_title">
-					<span>News</span>
-					<h3>What's new?</h3>
-				</div>
-				<div class="news_list">
-					<ul>
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/ratios/ratio-4-3.jpg" alt="" />
-									<div class="main" data-img-url="img/news/ICMA.png"></div>
-									<a class="arlo_tm_full_link" href="#"></a>
-								</div>
-								<div class="details">
-									<h3 class="title"><a href="#">Paper Accepted!</a></h3>
-									<p class="date">By <a href="#">Me</a> <span>15 May 2023</span></p>
-								</div>
-								<div class="description">
-									<p>An upgrade version of my proposed network model has been accpted by ICMA 2023. It shall be a good chance to pay a trip to Harbin then pay a visit back home.</p>
-									<div class="share">
-										<span>Share:</span>
-										<ul class="social">
-											<li><a href="http://2023.ieee-icma.org/"><img class="svg" src="img/svg/study-5.svg" alt="" >ICMA 2023</a></li>
-										</ul>
-									</div>
-								</div>
+                  <!-- Portfolio Item 3 -->
+                  <figure class="item" data-groups='["all","everyday"]'>
+                    <a href="./portfolios/mojira/IMG_5261.JPEG" class="lightbox" title="Duis Eu Eros Viverra">
+                      <img src="./portfolios/mojira/IMG_5261.JPEG" alt="">
+                      <div>
+                        <h5 class="name">モジラ</h5>
+                        <small>Pet</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 3 -->
 
-								
-							</div>
-						</li>
+                  <!-- Portfolio Item 4 -->
+                  <figure class="item" data-groups='["all", "travel"]'>
+                    <a class="ajax-page-load" href="./portfolios/rabbit/portfolio.html">
+                      <img src="./portfolios/rabbit/0.png" alt="">
+                      <div>
+                        <h5 class="name">月兎の里</h5>
+                        <small>Travel</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 4 -->
 
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/ratios/ratio-4-3.jpg" alt="" />
-									<div class="main" data-img-url="img/news/Asakusa.jpg"></div>
-									<a class="arlo_tm_full_link" href="#"></a>
-								</div>
-								<div class="details">
-									<h3 class="title"><a href="#">Visited Asakusa Again!</a></h3>
-									<p class="date">By <a href="#">M&Me</a> <span>25 April 2023</span></p>
-								</div>
-								<div class="description">
-									<p>Paid a visit to Asakusa again, still massively crowded. The old tailsman is returned to the Kami Sama. Got the same new one (shrinked Kaminarimon)(*^▽^*)</p>
-								</div>
-							</div>
-						</li>
+                   <!-- Portfolio Item 5 -->
+                   <figure class="item" data-groups='["all", "everyday"]'>
+                    <a href="./portfolios/lemonne/IMG_4385.mp4" title="First day of 3 Birds" class="lightbox mfp-iframe">
+                      <img src="./portfolios/lemonne/0.png" alt="">
+                      <div>
+                        <h5 class="name">レモネ</h5>
+                        <small>Pet</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 2 -->
 
-						<li class="wow fadeInLeft" data-wow-duration="1.5s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/ratios/ratio-4-3.jpg" alt="" />
-									<div class="main" data-img-url="img/news/mojira.jpg"></div>
-									<a class="arlo_tm_full_link" href="#"></a>
-								</div>
-								<div class="details">
-									<h3 class="title"><a href="#">Welcome! Mojira!</a></h3>
-									<p class="date">By <a href="#">Me</a> <span>23 April 2023</span></p>
-								</div>
-								<div class="description">
-									<p>We have a short-time visitor, Mojira the Kaiju. Hope he can get along with other birds.</p>
-									
-									<!--<div class="share">
-										<span>Share:</span>
-										<ul class="social">
-											<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" ></a></li>
-										</ul>
-									</div>-->
-								</div>
-							</div>
-						</li>
+                  
+                </div>
+                <!-- /Portfolio Grid -->
 
-						<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-							<div class="list_inner">
-								<div class="image">
-									<img src="img/ratios/ratio-4-3.jpg" alt="" />
-									<div class="main" data-img-url="img/news/IFAC.png"></div>
-									<a class="arlo_tm_full_link" href="#"></a>
-								</div>
-								<div class="details">
-									<h3 class="title"><a href="#">Paper Accepted!</a></h3>
-									<p class="date">By <a href="#">Me</a> <span>10 March 2023</span></p>
-								</div>
-								<div class="description">
-									<p>The paper of my proposed ultrasound segmentation network model has been accepted by IFAC 2023. It will be held in Yokohama this year, not too far&#9996</p>
-									
-									<div class="share">
-										<span>Share:</span>
-										<ul class="social">
-											<li><a href="https://www.ifac2023.org/"><img class="svg" src="img/svg/study-5.svg" alt="" >IFAC 2023</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</li>
-						
-						
+              </div>
+              <!-- /Portfolio Content -->
 
-						
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /NEWS -->
-	
-	<!-- CONTACT -->
-	<!-- <div class="arlo_tm_section" id="contact">
-		<div class="arlo_tm_contact">
-			<div class="container">
-				<div class="contact_inner">
-					<div class="arlo_tm_main_title">
-						<span>Contact</span>
-						<h3>Get in Touch</h3>
-					</div>
-					<div class="desc">
-						<p class="wow txt" data-splitting>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
-					</div>
-					<div class="wrapper">
-						<div class="left wow fadeInLeft" data-wow-duration="1.5s">
-							<div class="fields">
-								<form action="/" method="post" class="contact_form" id="contact_form">
-									<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-									<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-									<div class="first">
-										<ul>
-											<li>
-												<input id="name" type="text" placeholder="Name" autocomplete="off">
-											</li>
-											<li>
-												<input id="email" type="text" placeholder="Email" autocomplete="off">
-											</li>
-										</ul>
-									</div>
-									<div class="last">
-										<textarea id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="arlo_tm_button" data-color="dark">
-										<a id="send_message" href="#">Send Message</a>
-									</div>-->
+            </section>
+            <!-- /Portfolio Subpage -->
 
-									<!-- If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.-->
+            <!-- Blog Subpage -->
+            <section class="pt-page pt-page-4" data-id="blog">
+              <div class="section-title-block">
+                <h2 class="section-title">Research</h2>
+                <h5 class="section-description">My Diary</h5>
+              </div>
+              <div class="blog-masonry">
+                <!-- Blog Post 1 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">6</span><span class="month">Dec</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">Travel</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 1 -->
 
-								<!--</form>
-							</div>
-						</div>
-						<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<div class="map_wrap">
-								<div class="map" id="ieatmaps"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
--->
-	<!-- /CONTACT -->
-	
-	<!-- COPYRIGHT -->
-	<div class="arlo_tm_section">
-		<div class="arlo_tm_copyright">
-			<div class="container">
-				<div class="inner">
-					<div class="copy wow fadeInLeft" data-wow-duration="1.5s">
-						<p>&copy; Copyright 2019-2021. All rights are By <a href="http://www.bootstrapmb.com/">bootstrapmb</a>.</p>
-					</div>
-					<!-- <div class="social wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-						<ul>
-							<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a></li>
-							<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a></li>
-							<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" /></a></li>
-							<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a></li>
-							<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg" alt="" /></a></li>
-						</ul>
-					</div> -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /COPYRIGHT -->
-	
-	<!-- CURSOR -->
-	<div class="mouse-cursor cursor-outer"></div>
-	<div class="mouse-cursor cursor-inner"></div>
-	<!-- /CURSOR -->
-	
-</div>
-<!-- / WRAPPER ALL -->
-	
-<!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
-<script async defer src="http://www.google.cn/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap"></script>
-<!-- /SCRIPTS -->
+                <!-- Blog Post 2 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">3</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">jQuery</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every Device</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 2 -->
 
-</body>
+                <!-- Blog Post 3 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">12</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">Sport</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 3 -->
+
+                <!-- Blog Post 4 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">18</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">CSS</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 4 -->
+
+                <!-- Blog Post 5 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">2</span><span class="month">Jul</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">                        
+                      <ul class="category">
+                        <li><a href="#">CSS3</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">Original and Innovative Web Layouts</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 5 -->
+
+                <!-- Blog Post 6 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">8</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">HTML5</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 6 -->
+
+                <!-- Blog Post 7 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">7</span><span class="month">Apr</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">Design</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">Navigation for Mega-Sites</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 7 -->
+
+                <!-- Blog Post 8 -->
+                <div class="item">
+                  <div class="blog-card">
+                    <div class="media-block">
+                      <a href="blog-post-1.html">
+                        <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
+                        <div class="mask"></div>
+                        <div class="post-date"><span class="day">21</span><span class="month">Mar</span><!--<span class="year">2016</span>--></div>
+                      </a>
+                    </div>
+                    <div class="post-info">
+                      <ul class="category">
+                        <li><a href="#">CSS3</a></li>
+                      </ul>
+                      <a href="blog-post-1.html"><h4 class="blog-item-title">Front-End Challenge Accepted: CSS 3D Cube</h4></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Blog Post 8 -->
+              </div>
+            </section>
+            <!-- End Blog Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page pt-page-5" data-id="contact">
+              <div class="section-title-block">
+                <h2 class="section-title">Contact</h2>
+                <h5 class="section-description">Get in Touch</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Get in Touch</h3>
+                  </div>
+                  <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-map-marker"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>Los Angeles, USA</h5>
+                    </div>
+                  </div>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-mail"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>alexsmith@example.com</h5>
+                    </div>
+                  </div>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-call"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>+123 654 78900</h5>
+                    </div>
+                  </div>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-check"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>Freelance Available</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Contact Form</h3>
+                  </div>
+                  <form id="contact-form" method="post" action="contact_form/contact_form.php">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+                      <div class="form-group">
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                          <div class="form-control-border"></div>
+                          <i class="form-control-icon fa fa-user"></i>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-group">
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                          <div class="form-control-border"></div>
+                          <i class="form-control-icon fa fa-envelope"></i>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-group">
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                          <div class="form-control-border"></div>
+                          <i class="form-control-icon fa fa-comment"></i>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+
+                      <input type="submit" class="button btn-send" value="Send message">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>
