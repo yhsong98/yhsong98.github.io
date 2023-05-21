@@ -146,12 +146,12 @@
                       // Or a function that should return %id%, for example:
                       // id: function(url) { return 'parsed id'; }
 
-                      src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                      src: '//www.youtube.com/embed/%id%?autoplay=0' // URL that will be set as a source for iframe.
                     },
                     vimeo: {
                       index: 'vimeo.com/',
                       id: '/',
-                      src: '//player.vimeo.com/video/%id%?autoplay=1'
+                      src: '//player.vimeo.com/video/%id%?autoplay=0'
                     },
                     gmaps: {
                       index: '//maps.google.',
@@ -188,3 +188,4 @@
     });
 
 })(jQuery);
+
