@@ -67,9 +67,20 @@
             <p class="lead">IFAC World Congress Paper Accepted!</p>
 
             <p>My paper about abdominal multi-organ segmentation method has been accepted by the <a href="https://www.ifac2023.org/" style="text-decoration: none">IFAC World Congress 2023</a>.</p>
+            <SCRIPT type="text/javascript">
+              function passwd(paper,accl){
 
+                var password = prompt('Enter the password to download the paper, enter arbitrarily to view the acceptance letter:');
+                if(password.toLowerCase() == "jaistsong"){
+                  window.open(paper)
+                }else{
+                  alert("Incorrect password!! You can read the acceptance letter only!");
+                  window.open(accl)
+                }
+              }
+              </script>
             <blockquote>
-              <a href="IFAC23_AcceptanceLetter_273_153146.pdf" style="text-decoration: none"><p>Abdominal Multi-Organ Segmentation Based on Feature Pyramid Network and Spatial Recurrent Neural Network</p></a>
+              <a href="#" style="text-decoration: none" onClick="passwd('../../files/IFAC23.pdf','../../files/IFAC23_acceptance_letter.pdf')"><p>Abdominal Multi-Organ Segmentation Based on Feature Pyramid Network and Spatial Recurrent Neural Network</p></a>
             </blockquote>
 
             

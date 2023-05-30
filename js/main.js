@@ -79,6 +79,16 @@
     }
     // /Hide Mobile menu
 
+    function passwd(paper,accl){
+
+        var password = prompt('Enter the password to download the paper, enter arbitrarily to view the acceptance letter:');
+        if(password.toLowerCase() == "jaistsong"){
+          window.open(paper)
+        }else{
+          alert("Incorrect password!! You can read the acceptance letter only!");
+          window.open(accl)
+        }
+      }
 
     $(document).ready(function(){
 

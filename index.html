@@ -284,6 +284,18 @@
                 </div>
 
                 <!--Publications-->
+                <SCRIPT type="text/javascript">
+                function passwd(paper,accl){
+
+                  var password = prompt('Enter the password to download the file:');
+                  if(password.toLowerCase() == "jaistsong"){
+                    window.open(paper)
+                  }else{
+                    alert("Incorrect password!! You can read the acceptance letter only!");
+                    window.open(accl)
+                  }
+                }
+                </script>
                 <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="block-title">
                     <h3>Publications</h3>
@@ -294,14 +306,14 @@
                       <h5 class="event-date">July 2023</h5>
                       <a href="https://www.ifac2023.org/" style="text-decoration: none"><h4 class="event-name">IFAC World Congress 2023</h4></a>
                       <span>Conference Proceeding</span>
-                      <a href="./blogs/blog_2023_03_15/IFAC23_AcceptanceLetter_273_153146.pdf" style="text-decoration: none"><p>Abdominal Multi-Organ Segmentation Based on Feature Pyramid Network and Spatial Recurrent Neural Network</p></a>
+                      <a href="#" style="text-decoration: none" onClick="passwd('./files/IFAC23.pdf','./files/IFAC23_acceptance_letter.pdf')"><p>Abdominal Multi-Organ Segmentation Based on Feature Pyramid Network and Spatial Recurrent Neural Network</p></a>
                     </div>
                     <!-- Single event -->
                     <div class="timeline-event te-primary">
                       <h5 class="event-date">Aug 2023</h5>
                       <a href="http://2023.ieee-icma.org/" style="text-decoration: none"><h4 class="event-name">IEEE ICMA 2023</h4></a>
                       <span>Conference Proceeding</span>
-                      <a href="./blogs/blog_2023_05_15/ICMA_acceptance_letter.pdf" style="text-decoration: none"><p>Two-Path Augmented Directional Context Aware Ultrasound Image Segmentation</p></a>
+                      <a href="#" style="text-decoration: none" onClick="passwd('./files/ICMA23.pdf','./files/ICMA23_acceptance_letter.pdf')"><p>Two-Path Augmented Directional Context Aware Ultrasound Image Segmentation</p></a>
                     </div>                                       
                   </div>
                 </div>
@@ -764,7 +776,7 @@
       </div>
       <!-- /Main Content -->
     </div>
-
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/page-transition.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
