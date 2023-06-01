@@ -20,7 +20,35 @@
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+      function passwd(paper,accl){
 
+        if(paper=='./files/Transcript_YuhanSONG.pdf'){
+          var password = prompt('Enter the password to download the file:');
+        if(password.toLowerCase() == "jaistsong"){
+          window.location.href = paper
+          //window.open(paper)
+        }else{        
+          alert("Incorrect password!! Please feel free to contact me if you wish to view the file.")
+          //window.open(accl)}
+        
+        }
+          }
+          else{
+
+            var password = prompt('Enter the password to download the file. Enter arbitrarily to view the acceptance letter. If you wish to view my paper, please feel free to contact me:');
+            if(password.toLowerCase() == "jaistsong"){
+              window.location.href = paper
+              //window.open(paper)
+            }else{        
+              alert("Incorrect password!! You can view the acceptance letter only.");
+              window.location.href = accl
+              //window.open(accl)}
+        
+          }
+    }
+    }
+      </script>
     
   </head>
 
@@ -284,20 +312,7 @@
                 </div>
 
                 <!--Publications-->
-                <SCRIPT type="text/javascript">
-                function passwd(paper,accl){
-
-                  var password = prompt('Enter the password to download the file, enter arbitrarily to view the acceptance letter:');
-                  if(password.toLowerCase() == "jaistsong"){
-                    window.location.href = paper
-                    //window.open(paper)
-                  }else{
-                    alert("Incorrect password!! You can read the acceptance letter only!");
-                    window.location.href = accl
-                    //window.open(accl)
-                  }
-                }
-                </script>
+                
                 <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="block-title">
                     <h3>Publications</h3>
@@ -361,7 +376,7 @@
                     <a class="button" target="_blank" href="CV_YuhanSONG.pdf" download="CV_YuhanSONG.pdf">Download CV</a>
                   </div>
                   <div class="download-cv-block">
-                    <a class="button" target="_blank" href="CV_YuhanSONG.pdf" download="CV_YuhanSONG.pdf">Download Transcript</a>
+                    <button class="button" target="_blank" onClick="passwd('./files/Transcript_YuhanSONG.pdf','CV_YuhanSONG.pdf')">Download Transcript</button>
                   </div>
                 </div>
               </div>
