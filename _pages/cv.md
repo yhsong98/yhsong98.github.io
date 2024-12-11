@@ -11,54 +11,30 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* PhD in Bioengineering, The University of Tokyo, 2027 (expected)
+* MSc in Information Science, Japan Advanced Isstitute of Science and Technology, 2023
+* BEng in Information Security, Hefei University of Ttechnology, 2019
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* July 2023 - September 2024: Researcher
+  * Japan Advanced Isstitute of Science and Technology
+  * Development of robot-assisted ultrasound scan system
 
-* Fall 2015: Research Assistant
-  * Github University
+* June 2018 - September 2018: Internship
+  * Hefei WYNX Information Technology Co., Ltd.
   * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  * Backend engineer
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python, Java, Matlab, PHP
+
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
