@@ -13,7 +13,7 @@ Education
 ======
 * PhD in Bioengineering, The University of Tokyo, 2027 (expected)
 * MSc in Information Science, Japan Advanced Isstitute of Science and Technology, 2023
-* BEng in Information Security, Hefei University of Ttechnology, 2019
+* BEng in Information Security, Hefei University of Technology, 2019
 
 Work experience
 ======
