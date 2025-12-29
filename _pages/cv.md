@@ -22,6 +22,7 @@ Work experience
   * Development of robot-assisted ultrasound scan system
 
 Awards and Scholarships
+======
 * April 2026 - Present
   * JSPS Research Fellowships for Young Scientists (DC2)
 * October 2021 - March 2022
