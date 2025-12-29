@@ -21,10 +21,11 @@ Work experience
   * Japan Advanced Isstitute of Science and Technology
   * Development of robot-assisted ultrasound scan system
 
-* June 2018 - September 2018: Internship
-  * Hefei WYNX Information Technology Co., Ltd.
-  * Duties included: Merging pull requests
-  * Backend engineer
+Awards and Scholarships
+* April 2026 - Present
+  * JSPS Research Fellowships for Young Scientists (DC2)
+* October 2021 - March 2022
+  * Monbukagakusho Honors Scholarship for Privately Financed International Students
 
 Skills
 ======
